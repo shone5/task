@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Upload CSV</title>
+</head>
+<body>
+<!-- upload_form.html -->
+<form method="post" enctype="multipart/form-data">
+  {% csrf_token %}
+  <label for="csv_file">Upload CSV file:</label>
+  <input type="file" name="csv_file" required>
+  <br>
+  <button type="submit">Upload</button>
+</form>
+<!-- filter_form.html -->
+<form method="get">
+  <label for="status">Status:</label>
+  <select name="status">
+    <option value="">All</option>
+    <option value="pending">Pending</option>
+    <option value="shipped">Shipped</option>
+    <!-- add additional options as necessary -->
+  </select>
+  <label for="year">Year:</label>
+  <select name="year">
+    <option value="">All</option>
+    <option value="2001">2001</option>
+    <option value="2002">2002</option>
+    <option value="2003">2003</option>
+    <!-- add additional options as necessary
+
+
+
+
+</body>
+</html>

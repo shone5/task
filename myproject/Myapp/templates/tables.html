@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!-- sales_data.html -->
+<table>
+  <thead>
+    <tr>
+      <th>Status</th>
+      <th>Quantity</th>
+      <th>Price</th>
+      <th>Year</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for row in upload_csv %}
+      <tr>
+        <td>{{ row.status }}</td>
+        <td>{{ row.quantity }}</td>
+        <td>{{ row.price }}</td>
+        <td>{{ row.year }}</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+</body>
+</html>
